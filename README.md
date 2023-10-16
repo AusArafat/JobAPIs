@@ -73,7 +73,7 @@ Both with password "123456789"
 
 ### Get all & Get by id can be reached using
 * Get to '/job_applications'
-* Get to '//job_applications/{id}'
+* Get to '/job_applications/{id}'
 
 ### Job application can be created by Posting to '/job_applications'
 ```json
