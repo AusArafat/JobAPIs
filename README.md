@@ -1,7 +1,8 @@
 # README
 
 ## Task difficulties
-Due to time constraint no proper authentication or testing modules were created.  
+Due to time constraint of only 1 day working on the task.   
+No proper authentication or testing modules were created.  
 I opted for simple bearer user authentication which has many flaws. Attempting to use Devise library caused some issues.  
 Testing was done during development manually, and I had no time left to create proper unit tests for endpoints and validations.  
 Due to this, there is a high likelyhood that some cases were missed and will throw errors.  
@@ -11,6 +12,21 @@ To unify the response behvaiour of the various endpoints.
 Given all these difficulties I have done my best to fulfill the technical requirements and learn as I go during my
 first ruby experience.
 
+# Setup
+Install Ruby on rails.  
+Pull the repo and open a terminal or cmd.  
+Traverse to the pull location.  
+Run the following commands:
+```shell
+bundle install
+rails db:migrate
+rails db:seed
+rails s
+```
+
+This will start the server locally on http://localhost:3000
+
+# Endpoints
 ## Users
 ### There are 2 default users created 
 * aus_admin@example.com
@@ -67,3 +83,4 @@ Both with password "123456789"
     }
 }
 ```
+
